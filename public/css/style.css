@@ -1,0 +1,56 @@
+* {
+  /* border: 2px solid black; */
+  margin: 0;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.bg-dark {
+  color: white;
+}
+
+.btn:hover {
+  background-color: orangered !important;
+  color: white;
+}
+
+.link-cv {
+  text-decoration: none;
+}
+
+.icon-sosmed img {
+  margin-right: 10px;
+}
+
+.btn-card button {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+.btn-card button:hover {
+  background-color: orange;
+  color: black;
+  border: none;
+}
+
+/* card */
+.card {
+  background-color: azure;
+}
+
+.isi-card {
+  box-shadow: 1px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+}

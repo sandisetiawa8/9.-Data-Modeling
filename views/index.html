@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Styele Sendiri -->
+    <link rel="stylesheet" href="/public/css/style.css" />
+
+    <title>Home || Dumbways.id</title>
+    <link rel="icon" href="/public/image/logo2.png" />
+  </head>
+  <body style="background-color: hsl(0, 0%, 90%)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="margin: 0px; vertical-align: middle">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="/public/image/logo1.png" style="width: 40px" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item" style="width: 150px">
+              <a class="nav-link" href="/formproject">Add Project</a>
+            </li>
+          </ul>
+          <div class="d-flex w-100 justify-content-end">
+            <a href="/contact"><button type="button" class="btn bg-dark">Contact Me</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="container mt-5" style="background-color: whitesmoke">
+        <div class="content mt-xl-5">
+          <div class="row">
+            <div class="col-md-7 col-lg-6 col-xl-7 col-sm-12 mt-xl-5 mt-lg-4 mt-sm-3 ms-lg-5 ms-md-3 pt-md-5" style="margin-right: 50px">
+              <h1>Hi Welcome to my hut</h1>
+              <p style="text-align: justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere exercitationem odit nobis tenetur assumenda minima praesentium debitis sapiente dolore molestias, distinctio nam. Id fuga error perferendis aspernatur delectus
+                optio eum nulla, praesentium accusantium similique voluptas consectetur obcaecati veniam magnam quasi corporis perspiciatis inventore, dolorum alias tenetur ullam. Nisi, molestiae, assumenda officia quod ex, sunt libero
+                doloribus inventore quas laboriosam quam! Obcaecati saepe ex nobis numquam sapiente tempore voluptatem natus veniam, nihil, quas quod illo? Obcaecati hic eos optio quaerat.
+              </p>
+              <div class="mt-xl-4 mt-lg-4 mt-sm-3">
+                <a href="/contact"><button type="button" class="btn bg-dark me-3">Contact Me</button></a>
+                <a href="" class="link-cv">Download CV <img src="/public/icon/icon-download.svg" alt="DownloadCv" /></a>
+              </div>
+
+              <div class="icon-sosmed mt-xl-5 mt-lg-3 mt-sm-3 mb-lg-3">
+                <img src="/public/icon/linked.png" width="35px" alt="" />
+                <img src="/public/icon/instagram2.png" width="35px" alt="" />
+                <img src="/public/icon/facebook.png" width="35px" alt="" />
+                <img src="/public/icon/twitter.png" width="35px" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-xl-4 pt-lg-5">
+              <div class="card card-item mt-lg-4 mt-sm-5 mb-4 me-5 w-80" style="border-radius: 10px; background-color: white">
+                <img src="/public/image/foto.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 style="text-align: center">SANDY SETIAWAN</h4>
+                  <p class="card-text" style="text-align: center">Fullstack Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card List -->
+    <section>
+      <div class="title mt-5">
+        <h1 style="text-align: center">MY PROJECT</h1>
+      </div>
+
+      <div class="card-list mt-2" style="position: center; padding-left: 70px">
+        <div class="row" style="margin: auto">
+          {{range $index, $data := .Blogs }}
+          <div class="isi-card col-3 ms-5 me-4 mt-4 mb-5">
+            <div class="content-card ms-3 me-3">
+              <a style="text-decoration: none; color: black" href="/detail/{{$index}}">
+                <img src="public/image/abstrak.jpg" width="35px" class="card-img mt-3" style="border-radius: 10px" />
+                <h5 class="mt-3" style="margin-bottom: -3px">{{$data.Title}}</h5>
+                <small class="durasi">Durasi: {{$data.StartDate}} s.d {{$data.EndDate}} </small>
+                <p class="description mt-3" style="text-align: justify">{{$data.Description}}</p>
+                <div class="icon-image mb-3">
+                  <img src="/public/icon/nodejs.png" width="27px" alt="" />
+                  <img src="/public/icon/reactjs.png" width="30px" alt="" />
+                  <img src="/public/icon/nextjs.png" width="27px" alt="" />
+                  <img src="/public/icon/typescript.png" width="27px" alt="" />
+                </div>
+              </a>
+
+              <div style="display: flex" class="mb-4 btn-card">
+                <button class="col-5 ms-2"><a href="/edit-project/{{$index}}" style="text-decoration: none; color: white">Edit</a></button>
+                <button class="col-5 offset-1 w-200"><a href="/delete-project/{{$index}}" style="text-decoration: none; color: white">Delete</a></button>
+              </div>
+            </div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

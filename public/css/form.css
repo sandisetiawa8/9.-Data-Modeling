@@ -1,0 +1,298 @@
+body {
+  background-color: rgb(210, 205, 205);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Start */
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  /* background-color: red; */
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.judul {
+  text-align: center;
+}
+
+.judul h1 {
+  font-weight: bold;
+}
+
+.form {
+  border-radius: 5px;
+}
+
+label {
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+input {
+  margin-top: 500px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.tgl {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.tgl p {
+  margin-top: 10px;
+}
+
+.inp-date {
+  margin-top: -15px;
+}
+
+.inp-date1 {
+  margin-right: 24px;
+  margin-left: 0px;
+}
+
+.inp-date input {
+  width: 47%;
+}
+
+.label-date1 {
+  margin-right: 183px;
+}
+
+.inp-st {
+  margin-top: 0px;
+  width: 49%;
+  margin-right: 1px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  vertical-align: middle;
+  margin-top: -2px;
+  padding: 10px 100px 5px 10px;
+  cursor: pointer;
+}
+
+.check-menu {
+  display: flex;
+}
+
+.input-blog-image-group {
+  width: 96%;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 20px;
+  align-items: center;
+}
+
+.input-blog-image-group label p {
+  font-size: 20px;
+  background-color: #a29f9f;
+  padding: 10px;
+  width: 100px;
+  position: relative;
+  margin-right: -100px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.btn-submit {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.btn-submit:hover {
+  color: black;
+  background-color: green;
+  border: none;
+}
+
+/* List Content */
+
+.card-list {
+  width: 30%;
+  box-shadow: 1px 2px 2px 2px rgb(106, 99, 99);
+}
+
+.isi-card {
+  width: 90%;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.title-poject {
+  text-align: center;
+  margin-bottom: 17px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.card-img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.durasi {
+  margin-top: -15px;
+  font-size: 14px;
+}
+
+.desciption {
+  text-align: justify;
+}
+
+.icon-image {
+  margin: auto;
+  padding-right: 100px;
+}
+
+.icon-image img {
+  padding-right: 14px;
+  padding-bottom: 25px;
+  width: 25px;
+}
+
+.btn-bawah {
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.btn-bawah button {
+  width: 30%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 33px;
+  margin-right: 10px;
+  border: none;
+  padding: 6px;
+}
+
+.btn-bawah button:hover {
+  background-color: orangered;
+  color: black;
+}
+
+.technologies img {
+  width: 30px;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.date {
+  display: grid;
+  gap: 0px 15px;
+  grid-template-areas:
+    "label-1 label-2"
+    "start-date end-date";
+}
+
+.label-1 {
+  grid-area: label-1;
+}
+
+.label-2 {
+  grid-area: label-2;
+}
+
+.start-date {
+  grid-area: start-date;
+  width: 100%;
+}
+
+.end-date {
+  grid-area: end-date;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .inp-date {
+    width: 100%;
+    padding: auto;
+  }
+
+  .label-date1 {
+    margin-right: 116px;
+  }
+
+  .inp-date1 {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .inp-date input {
+    width: 49.5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inp-date {
+    width: 100%;
+    padding: auto;
+  }
+
+  .label-date1 {
+    margin-right: 116px;
+  }
+
+  .inp-date input {
+    width: 48.8%;
+  }
+
+  .inp-date1 {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+}

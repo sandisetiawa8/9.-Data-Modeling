@@ -1,0 +1,62 @@
+/* .container {
+  width: 100%;
+}
+
+.wrap {
+  width: 95%;
+  margin: auto;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.judul h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.duration {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.img-duration {
+  padding: 20px;
+  width: 35px;
+  vertical-align: -30px;
+  margin-right: -20px;
+  margin-top: -20px;
+  padding-right: 30px;
+}
+
+.wrap-icon {
+  display: flex;
+  margin-left: -10px;
+}
+
+.icon-logo {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.icon-logo img {
+  width: 35px;
+  padding: 10px 30px;
+  vertical-align: middle;
+} */
+
+h3 {
+  margin-bottom: -10px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.p-content {
+  text-align: justify;
+}

@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Detail Blog</title>
+    <link rel="icon" href="/public/image/logo2.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/public/css/form.css" />
+    <link rel="stylesheet" href="/public/css/detail.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="margin: 0px; vertical-align: middle">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="/public/image/logo1.png" style="width: 40px" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item" style="width: 150px">
+              <a class="nav-link" href="/formproject">Add Project</a>
+            </li>
+          </ul>
+          <div class="d-flex w-100 justify-content-end">
+            <a href="/contact"><button type="button" class="btn bg-dark">Contact Me</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Contain -->
+    <div class="container">
+      <div class="wrap">
+        <div class="judul" style="padding: 20px">
+          <h1>{{.Blog.Title}}</h1>
+        </div>
+
+        <section class="mb-5">
+        <div class="header">
+          <div class="row">
+            <div class="col-8">
+              <img src="/public/image/abstrak.jpg" width="100%" alt="" />
+            </div>
+
+            <div class="col-4 ps-4 mt-3">
+              <h2 style="font-size: 25px; font-weight: bold">Duration</h2>
+              <img class="mb-3 me-3" style="margin-top: 10px" src="/public/icon/calender.png" width="27px" alt="" /><label for="">{{.Blog.StartDate}} s.d {{.Blog.EndDate}}</label><br />
+              <img class="me-3" style="margin-left: -4px" src="/public/icon/durasi.png" width="35px" alt="" /><label for="">3 Bulan</label>
+
+              <h2 class="mt-xl-5 mt-lg-3 mt-sm-2 mb-1" style="font-size: 25px; font-weight: bold">Technologies</h2>
+              <div class="row d-flex" style="flex-direction: column">
+                <div class="col-12 mt-3">
+                  <img src="/public/icon/nodejs.png" style="width: 35px; margin-right: 10px" alt="" />Node Js
+                  <img src="/public/icon/nextjs.png" width="35px" style="margin-left: 53px; margin-right: 10px" alt="" />Next Js
+                </div>
+
+                <div class="col-12 mt-3">
+                  <img src="/public/icon/reactjs.png" style="width: 35px; margin-right: 10px" alt="" />React Js
+                  <img src="/public/icon/typescript.png" width="35px" style="margin-left: 50px; margin-right: 10px" alt="" />Typescript
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <div class="wrap">
+          <p class="p-content">
+            {{.Blog.Description}}
+          </p>
+          <p class="p-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique exercitationem molestiae provident ad error ex voluptates ducimus cumque neque reiciendis dolorem optio esse enim doloribus quibusdam voluptatem, dolor
+            consequatur soluta et quod totam repudiandae pariatur quisquam voluptatum. Repellendus, officiis! Possimus voluptatem dolorem ea maxime. Vero perferendis illum, ex maxime distinctio exercitationem quidem ipsa perspiciatis a
+            cupiditate corrupti magni iure aliquid, maiores animi, laborum necessitatibus! Tempora suscipit, eum itaque perspiciatis alias velit harum fugit dolorum aliquid voluptas, eligendi enim quia repudiandae, obcaecati temporibus
+            facere? Cumque nam architecto itaque. Odit natus illo assumenda dolorum, eaque optio? Unde nisi doloremque facere rem ut.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
